@@ -58,7 +58,7 @@ your study time and to measure your progress:
 </details>
 
 - **Your Computer**:
-  - [ ] 🥚 **File System Management**: You can create and organize a new folder
+  - [x] 🥚 **File System Management**: You can create and organize a new folder
         in your personal computer for the materials you will study at Emerging
         Talent.
 - **Visual Studio Code**:
