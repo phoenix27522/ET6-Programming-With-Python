@@ -15,7 +15,7 @@ Author: Claude AI
 
 import unittest
 
-from ..count_between import count_between
+from count_between import count_between
 
 class TestCountBetween(unittest.TestCase):
     """Test suite for the count_between function - contains buggy tests!"""
