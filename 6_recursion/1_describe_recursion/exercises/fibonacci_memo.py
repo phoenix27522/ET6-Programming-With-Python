@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import unittest
 
 """
 A recursive implementation of the Fibonacci sequence with memoization.
 
-The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones, starting from 0 and 1.
+The Fibonacci sequence is a series of numbers where each number is the
+sum of the two preceding ones, starting from 0 and 1.
 
 This function includes:
 - Base cases to handle the initial numbers of the sequence.
 - Memoization to optimize the recursive solution by storing previously computed results.
 """
-
+import unittest
 
 def fibonacci(n: int, memo: dict = None) -> int:
     """
