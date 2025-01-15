@@ -13,19 +13,21 @@ from trace_recursion import trace_recursion
 
 @trace_recursion
 def reverse_list(to_reverse: list) -> list:
-    base_case = _ # must use to_reverse
+    # Base case: If the list has 0 or 1 element, it's already reversed
+    base_case = len(to_reverse) <= 1
     if base_case:
-        turn_around = _
+        turn_around = to_reverse
         return turn_around
 
-    break_down = _ # must use to_reverse
-    recursion = reverse_list(break_down)
-    build_up = _ # must use recursion
-    
+    # Recursive case: Break down the problem
+    break_down = to_reverse[1:]  # Remove the first element
+    recursion = reverse_list(break_down)  # Recursively reverse the rest
+    build_up = recursion + [to_reverse[0]]  # Append the first element at the end
+
     return build_up
 
-# ----- ----- test cases ----- -----
 
+# ----- ----- test cases ----- -----
 
 print(reverse_list([]), 'should be', [])
 print(reverse_list([1, 2]), 'should be', [2, 1])
